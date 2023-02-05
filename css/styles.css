@@ -4,7 +4,31 @@
   --t-color-secondary: #434455;
   --btn-color-primery: #4d5ae5;
   --btn-color-secondary: #404bbf;
-  --background-primery: #e5e5e5;
-  --background-secondary: #f4f4fd;
+  --header-background-color: #ffffff; /*background header & main section of Portfolio*/
+  --background-primery: #f5f5f5; /*background main section*/
+  --background-secondary: #f4f4fd; /* background ourt team section */
   --background-hero-footer: #2e2f42;
+}
+/* скидає крапочки зі 'ul' списків */
+.list {
+  list-style: none;
+}
+
+/* бекграунд для Header  */
+.header-background {
+  background-color: var(--header-background-color);
+}
+
+/*бекграунд для Hero & Footer */
+.footer-hero-background {
+  background-color: var(--background-hero-footer);
+}
+
+/* бекграунд секції main */
+.main {
+  background-color: var(--background-primery);
+}
+
+.our-team-background {
+  background-color: var(--background-secondary);
 }
