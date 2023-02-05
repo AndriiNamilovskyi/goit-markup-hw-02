@@ -1,0 +1,10 @@
+/* Для зберігання палітри кольорів макета (текст, фон, виділення) використовуємо CSS-змінні.  */
+:root {
+  --t-color-primery: #2e2f42;
+  --t-color-secondary: #434455;
+  --btn-color-primery: #4d5ae5;
+  --btn-color-secondary: #404bbf;
+  --background-primery: #e5e5e5;
+  --background-secondary: #f4f4fd;
+  --background-hero-footer: #2e2f42;
+}
