@@ -4,31 +4,272 @@
   --t-color-secondary: #434455;
   --btn-color-primery: #4d5ae5;
   --btn-color-secondary: #404bbf;
-  --header-background-color: #ffffff; /*background header & main section of Portfolio*/
-  --background-primery: #f5f5f5; /*background main section*/
-  --background-secondary: #f4f4fd; /* background ourt team section */
+  --hero-title-color: #ffffff; /*headers background color & main section color Portfolio*/
+  --background-primery: #ffffff; /*background main section*/
+  --background-secondary: #f4f4fd; /* background ourt team section , filters button background*/
   --background-hero-footer: #2e2f42;
-}
-/* скидає крапочки зі 'ul' списків */
-.list {
-  list-style: none;
+  --footer-logo-text-color: #f4f4fd;
+  --footer-text-color: #e7e9fc;
 }
 
-/* бекграунд для Header  */
-.header-background {
-  background-color: var(--header-background-color);
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--t-color-primery);
+  /*background-color: antiquewhite; тимчасовий кольор*/
 }
-
-/*бекграунд для Hero & Footer */
-.footer-hero-background {
-  background-color: var(--background-hero-footer);
-}
-
-/* бекграунд секції main */
-.main {
+/*Heder section*/
+.heder {
   background-color: var(--background-primery);
 }
 
-.our-team-background {
+.link {
+  text-decoration: none;
+  font-style: normal;
+}
+.list {
+  list-style: none;
+}
+.nav-list {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+}
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.3;
+  color: var(--t-color-primery);
+}
+
+.logo > span {
+  color: var(--btn-color-primery);
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--btn-color-secondary);
+}
+
+.address-list {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.address-link {
+  color: var(--t-color-secondary);
+}
+
+.address-link:hover,
+.address-link:focus {
+  color: var(--btn-color-secondary);
+}
+
+.nav-link {
+  color: var(--t-color-primery);
+}
+
+/*HERO section*/
+.hero {
+  background-color: var(--background-hero-footer);
+}
+.hero-title {
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1.072;
+  color: var(--hero-title-color);
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+
+.hero-button {
+  cursor: pointer;
+  color: var(--hero-title-color);
+  text-align: left;
+  text-decoration: none;
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  background-color: var(--btn-color-primery);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+.hero-button:hover,
+.hero-button:focus {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.19;
+  /* identical to box height */
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.04em;
+  background-color: var(--btn-color-primery);
+  border-radius: 4px;
+}
+
+.hero-button:active {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  background-color: var(--btn-color-secondary);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+/*SOLUTIONS*/
+.solutions {
+  background-color: var(--background-primery);
+}
+.solutions-title {
+  color: var(--background-primery);
+}
+
+.solutions-list-subtitle {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+
+.solution-text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: var(--t-color-secondary);
+}
+/*what are we doing*/
+.galeria {
+  background-color: var(--background-primery);
+}
+
+.galeria-title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 4;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+.team {
   background-color: var(--background-secondary);
+}
+
+.team-title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+.team-list-subtitle {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+
+.team-list-text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--t-color-secondary);
+}
+
+.footer {
+  background-color: var(--background-hero-footer);
+  color: var(--footer-logo-text-color);
+}
+
+.footer-logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  color: var(--footer-logo-text-color);
+}
+
+.footer-logo > span {
+  color: var(--btn-color-primery);
+}
+
+.footer-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--footer-text-color);
+}
+
+/*background portfolio*/
+.main-portfolio {
+  background-color: var(--background-primery);
+}
+
+.filter-title {
+  color: #ffffff;
+}
+
+.button {
+  color: var(--btn-color-primery);
+  background-color: var(--background-secondary);
+  cursor: pointer;
+  /* button text */
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  /* identical to box height, or 150% */
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.04em;
+  border: 1px solid var(--footer-text-color);
+  border-radius: 4px;
+}
+
+.button:hover,
+.button:focus {
+  color: var(--hero-title-color);
+  background-color: var(--btn-color-secondary);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
+
+.portfolio {
+  color: #ffffff;
+}
+
+.portfolio-subtitle {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  /* identical to box height, or 120% */
+  letter-spacing: 0.02em;
+  color: var(--t-color-primery);
+}
+
+.portfolio-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--t-color-secondary);
 }
