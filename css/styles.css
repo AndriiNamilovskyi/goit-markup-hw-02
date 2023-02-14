@@ -5,17 +5,19 @@
   --btn-color-primery: #4d5ae5;
   --btn-color-secondary: #404bbf;
   --hero-title-color: #ffffff; /*headers background color & main section color Portfolio*/
-  --background-primery: #ffffff; /*background main section*/
+  --background-primery: #ffffff; /*background 
+  main section*/
+  --t-color-solution-title: #ffffff; /* solution H2 color*/
   --background-secondary: #f4f4fd; /* background ourt team section , filters button background*/
   --background-hero-footer: #2e2f42;
   --footer-logo-text-color: #f4f4fd;
   --footer-text-color: #e7e9fc;
+  --t-color-portfolio-title: #ffffff;
 }
 
 body {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
-  font-weight: 500;
   color: var(--t-color-primery);
 }
 
@@ -48,6 +50,7 @@ body {
 }
 
 .nav-link {
+  font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--t-color-primery);
@@ -58,7 +61,6 @@ body {
 }
 
 .address-link {
-  font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--t-color-secondary);
@@ -76,7 +78,6 @@ body {
 
 .hero-title {
   font-size: 56px;
-  font-weight: 700;
   line-height: 1.07;
   color: var(--hero-title-color);
   letter-spacing: 0.02em;
@@ -133,8 +134,8 @@ body {
   background-color: var(--background-primery);
 }
 
-.solutions-title {
-  color: var(--background-primery);
+.solution-title {
+  color: var(--t-color-solution-title);
 }
 
 .solutions-list-subtitle {
@@ -145,7 +146,6 @@ body {
 }
 
 .solution-text {
-  font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--t-color-secondary);
@@ -156,7 +156,7 @@ body {
   background-color: var(--background-primery);
 }
 
-.galeria-title {
+.section-title {
   font-size: 36px;
   line-height: 1.11;
   letter-spacing: 0.02em;
@@ -168,14 +168,6 @@ body {
   background-color: var(--background-secondary);
 }
 
-.team-title {
-  font-size: 36px;
-  line-height: 1.11;
-  letter-spacing: 0.02em;
-  text-transform: capitalize;
-  text-align: center;
-}
-
 .team-list-subtitle {
   font-weight: 500;
   font-size: 20px;
@@ -184,7 +176,6 @@ body {
 }
 
 .team-list-text {
-  font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--t-color-secondary);
@@ -211,7 +202,6 @@ body {
 }
 
 .footer-text {
-  font-weight: 400;
   font-style: normal;
   font-size: 16px;
   line-height: 1.5;
@@ -222,10 +212,6 @@ body {
 /*background portfolio*/
 .main-portfolio {
   background-color: var(--background-primery);
-}
-
-.filter-title {
-  color: #ffffff;
 }
 
 .button {
@@ -257,9 +243,11 @@ body {
 }
 
 .portfolio {
-  color: #ffffff;
+  background-color: var(--background-primery);
 }
-
+.portfolio-title {
+  color: var(--t-color-portfolio-title);
+}
 .portfolio-subtitle {
   font-weight: 500;
   font-size: 20px;
@@ -270,7 +258,6 @@ body {
 }
 
 .portfolio-text {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
